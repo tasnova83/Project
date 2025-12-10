@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<!-------Menu section start------> 
+<div class="menu-container">
+    <div class="logo">
+      <i class="fa-solid fa-couch"></i>
+      <h2>FurniLux</h2>
+    </div>
+
+    <div class="menu-item">
+      <ul>
+        <li class="active2"><a href="#home"><span class="nav-text">Home</span></a></li>
+
+        <li class="">
+          <a href="#collection"><span class="nav-text">Collection</span>
+          <i class="fa-solid fa-angle-down collection-show"></i></a>
+
+          <ul class="dropdown">
+            <li><a href="">Living Room</a></li>
+            <li><a href="">Bedroom</a></li>
+            <li><a href="">Dining</a></li>
+            <li><a href="">Office Furniture</a></li>
+            <li><a href="">Storage Solutions</a></li>
+            <li><a href="">Decor Items</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#features"><span class="nav-text">Features</span></a></li>
+        <li><a href="#about"><span class="nav-text">About</span></a></li>
+        <li><a href="#blog"><span class="nav-text">Blog</span></a></li>
+        <li><a href="#contact"><span class="nav-text">Contact</span></a></li>
+      </ul>
+    </div>
+
+    <div class="menu-icon">
+      <i title="search" class="fa-solid fa-magnifying-glass"></i>
+      <i title="Add to cart" class="fa-solid fa-cart-shopping"></i>
+    </div>
+
+    <!-- FIX: Menu container-এর ভিতরে রাখা হলো -->
+    <div class="menu-icon2">
+      <i class="fa-solid fa-bars mobile-show"></i>
+      <i class="fa-solid fa-xmark mobile-hide"></i>
+    </div>
+
+</div>
+<!-------Menu section end------>
+
+<!----Mobile Menu Start----->
+<div class="mobile-menu">
+      <ul>
+        <li class="click-menu"><a href="#home">Home</a></li>
+
+        <li>
+          <a href="#collection">Collection</a>
+          <i class="fa-solid fa-angle-up tutorials-hide"></i>
+          <i class="fa-solid fa-angle-down tutorials-show"></i>
+
+          <ul class="menu-dropdown">
+            <li><a href="">Living Room</a></li>
+            <li><a href="">Bedroom</a></li>
+            <li><a href="">Dining</a></li>
+            <li><a href="">Office Furniture</a></li>
+            <li><a href="">Storage Solutions</a></li>
+            <li><a href="">Decor Items</a></li>
+          </ul>
+        </li>
+
+        <li class="click-menu"><a href="#features">Features</a></li>
+        <li class="click-menu"><a href="#about">About</a></li>
+        <li class="click-menu"><a href="#blog">Blog</a></li>
+        <li class="click-menu" style="border-bottom: 2px solid #18186e;"><a href="#contact">Contact</a></li>
+      </ul>
+</div>
+<!----Mobile Menu End----->
+
+
+<!-------hero section start------>
+<div id="home" class="hero-container">
+    <div class="hero-text ">
+      <h1>Modern Furniture <br>for Modern Living</h1>
+      <p>Experience the perfect blend of design and comfort
+        <br>for homes that inspire and delight.</p>
+      <button class="hero-btn">Shop Now</button>
+      <button class="hero-btn">Explore More</button>
+    </div>
+    <div class="hero-img ">
+      <img src="image/hero.png">
+    </div>
+</div>
+<!-------hero section end------>
+
+
+<!-------collection section start------>
+<div id="collection" class="container-text">
+  <p><i style="color: #18186e;" class="fa-solid fa-minus"></i>Our Products</p>
+  <h1>Our Products Collection</h1>
+</div>
+<div class="buttons fade-in">
+  <button class="btns" style="background-color: #18186e; color: #fff;" data-target=".collection-container">All Products</button>
+  <button class="btns" data-target=".latest-container">Latest Products</button>
+  <button class="btns" data-target=".best-container">Best Sellers</button>
+  <button class="btns" data-target=".features-container">Features Products</button>
+</div>
+
+<div class="collection-container fade-in">
+    <div class="card">
+      <img src="image/sofa.jpg" alt="sofa" style="width:100%">
+      <p style="font-size: 15px;color: #6d6d6d;">Sofa</p>
+      <h1>Cozy Round Sofa</h1>
+      <p class="price">$120.00</p>
+      <p><i class="fa-solid fa-star" style="color: #ffaa00;"></i>5.0</p>
+    </div>
+    <div class="card">
+      <img src="image/nightstand.jpg" alt="nightstand" style="width:100%">
+      <p style="font-size: 15px;color: #6d6d6d;">Nightstand</p>
+      <h1>New Nightstand</h1>
+      <p class="price">$60.00</p>
+      <p><i class="fa-solid fa-star" style="color: #ffaa00;"></i>4.8</p>
+    </div>
+        <div class="card">
+      <img src="image/bookself.jpg" alt="bookself" style="width:100%">
+      <p style="font-size: 15px;color: #6d6d6d;">Self</p>
+      <h1>Modern Wall Shelf</h1>
+      <p class="price">$67.00</p>
+      <p><i class="fa-solid fa-star" style="color: #ffaa00;"></i>5.0</p>
+    </div>
+    <div class="card">
+      <img src="image/table.jpg" alt="" style="width:100%">
+      <p style="font-size: 15px;color: #6d6d6d;">Table</p>
+      <h1>Nordic Side Table</h1>
+      <p class="price">$50.00</p>
+      <p><i class="fa-solid fa-star" style="color: #ffaa00;"></i>4.9</p>
+    </div>
+    <div class="card">
+      <img src="image/chaaair.png" alt="chaaair" style="width:100%; background-color: #e8e2e2; ">
+      <p style="font-size: 15px;color: #6d6d6d;">Chair</p>
+      <h1>Comfort Chair</h1>
+      <p class="price">$57.00</p>
+      <p><i class="fa-solid fa-star" style="color: #ffaa00;"></i>5.0</p>
+    </div>
+    
+
+  </div>
+<!-------collection section end------>
+
+<!-------features section start------>
+<div id="features" class="features-text">
+  <p><i style="color: #18186e;" class="fa-solid fa-minus"></i>Our Feautures</p>
+  <h1>Why Choose Us?</h1>
+</div>
+<div class="features-container fade-in">
+
+    <div class="fet-card">
+        <i class="fa-solid fa-medal"></i>
+        <h2>Premium Quality</h2>
+        <p>We provide top-notch products made from high-quality materials. Every item is carefully crafted to meet
+            international standards and ensure long-lasting durability.</p>
+    </div>
+
+    <div class="fet-card">
+        <i class="fa-regular fa-truck"></i>
+        <h2>Fast Delivery</h2>
+        <p>Get your orders delivered quickly right to your doorstep. We work with trusted logistics partners to ensure
+            timely shipping. Track your package easily and enjoy a hassle-free.</p>
+    </div>
+
+    <div class="fet-card">
+        <i class="fa-solid fa-lock"></i>
+        <h2>Secure Payment</h2>
+        <p>All transactions are safe and encrypted to protect your financial information. We support multiple secure
+            payment methods. Shop with confidence your data is safe.</p>
+    </div>
+
+    <div class="fet-card">
+        <i class="fa-solid fa-rotate-left"></i>
+        <h2>Easy Return</h2>
+        <p>Not satisfied with your purchase? Our easy return policy allows you to return products within a specified
+            period. We make the process simple and convenient.</p>
+    </div>
+
+    <div class="fet-card">
+        <i class="fa-solid fa-shield"></i>
+        <h2>Warranty Guarantee</h2>
+        <p>We offer warranty on our products to ensure your peace of mind. Any manufacturing defects will be covered,
+            giving you confidence in your purchase.</p>
+    </div>
+
+    <div class="fet-card">
+        <i class="fa-solid fa-leaf"></i>
+        <h2>Eco Friendly</h2>
+        <p>Our products are designed with sustainability in mind. We use eco-friendly materials to reduce environmental
+            impact. Contribute to a greener planet.</p>
+    </div>
+
+</div>
+
+<!-------features section end------>
+
+
+
+<!-------about section start------>
+<div id="about" class="about-text ">
+  <p><i style="color: #18186e;" class="fa-solid fa-minus"></i>Our Story</p>
+  <h1>Who We Are?</h1>
+</div>    
+<div class="about-container">
+    <div class="about-images fadeLeft ">
+      <img src="image/large pic 2.jpg" alt="Main Image">
+    </div>
+    <div class="image-text fadeRight">
+      <h1>Introduction</h1>
+      <P>We started our journey in 2010 with a vision to craft high-quality handmade furniture. What began as a small workshop with a handful of passionate artisans has grown into a brand that represents craftsmanship, creativity, and trust. Every piece we create tells a story—blending timeless techniques with modern design to create furniture that is not only functional but also a work of art.
+Our mission has always been to bring beauty and comfort into every home, office, or space we touch.we believe that true quality is in the craftsmanship.</P>
+    <button>Learn more</button>
+</div>
+    <div class="image-text2 fadeLeft">
+      <h1>Our mission</h1>
+      <P>Our mission is to bring sustainable and elegant furniture to every home. We believe that furniture should not only be 
+        beautiful and functional but also kind to the environment. By carefully selecting eco-friendly materials and using responsible 
+        crafting techniques, we aim to create pieces that enrich living spaces while leaving a minimal footprint on the planet. Every 
+        table, chair, and cabinet is thoughtfully designed to combine style, durability, and sustainability.</P>
+    <button>Learn more</button>
+   </div>
+   <div class="about-images2 fadeRight">
+      <img src="image/large pic.jpg" alt="Main Image">
+    </div>
+</div>
+</div>
+<!-------about section end------>
+
+
+<!-------blog section start------>
+<div id="blog" class="blog-text">
+  <p><i style="color: #18186e;" class="fa-solid fa-minus"></i>News & Blogs</p>
+  <h1>Our Latest<br>News & Blogs</h1>
+</div> 
+<div class="blog-container">
+  <div class="bcard fade-in">
+  <img src="image/bed.jpg" alt="bed" style="width:100%">
+  <h1>10 Small Bedroom Ideas That Actually Work</h1>
+  <p>Explore simple design choices like layered bedding, ambient lighting, and natural materials to turn your bedroom into a calm.</p>
+  <a>Read more</a>
+</div>
+<div class="bcard fade-in">
+  <img src="image/dining.jpg" alt="dining" style="width:100%">
+  <h1>Modern Natural Dining Setup Ideas</h1>
+  <p>Discover how the right table shape, chair style, and warm lighting can transform your dining area into an inviting, modern space.</p>
+  <a>Read more</a>
+</div>
+<div class="bcard fade-in">
+  <img src="image/living.jpg" alt="living" style="width:100%">
+  <h1>How to Create a Cozy Living Room in 2025</h1>
+  <p>Learn how to balance neutral colors, soft textures, and smart furniture placement to build a living room that feels both elegant.</p>
+  <a>Read more</a>
+</div>
+</div>
+<!-------blog section end------>
+
+
+<!-------testimonial section start------>
+<div id="testimonial" class="testimonial-text">
+  <p><i style="color: #18186e;" class="fa-solid fa-minus"></i>Testimonials</p>
+  <h1>What Our Clients Say</h1>
+</div> 
+
+<div class="testimonial-container fade-in">
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+      <div class="tes-card2">
+    <div class="left-content2">
+      <div class="tes-img2">
+        <img src="image/c-1.jpg">
+      </div>
+      <div class="client-info2">
+        <h2>Alexander</h2>
+        <h4>Architect Designer</h4>
+        <p class="rating2">⭐ ⭐ ⭐ ⭐ ⭐ <span>5.0</span></p>
+      </div>
+    </div>
+
+    <p class="review2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Facilis, quae veritatis impedit eius accusamus ipsam inventore!
+    </p>
+  </div>
+    <div class="tes-card2">
+    <div class="left-content2">
+      <div class="tes-img2">
+        <img src="image/c-2.jpg">
+      </div>
+      <div class="client-info2">
+        <h2>Jenny Wilson</h2>
+        <h4>Interior Designer</h4>
+        <p class="rating2">⭐ ⭐ ⭐ ⭐ ⭐ <span>5.0</span></p>
+      </div>
+    </div>
+
+    <p class="review2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Facilis, quae veritatis impedit eius accusamus ipsam inventore!
+    </p>
+  </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="tes-card2">
+    <div class="left-content2">
+      <div class="tes-img2">
+        <img src="image/c-3.jpg">
+      </div>
+      <div class="client-info2">
+        <h2>Sophia</h2>
+        <h4>Architect Specialist</h4>
+        <p class="rating2">⭐ ⭐ ⭐ ⭐ ⭐ <span>5.0</span></p>
+      </div>
+    </div>
+
+    <p class="review2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Facilis, quae veritatis impedit eius accusamus ipsam inventore!
+    </p>
+  </div>
+    <div class="tes-card2">
+    <div class="left-content2">
+      <div class="tes-img2">
+        <img src="image/c-4.jpg">
+      </div>
+      <div class="client-info2">
+        <h2>Daniel</h2>
+        <h4>Furniture Designer</h4>
+        <p class="rating2">⭐ ⭐ ⭐ ⭐ ⭐ <span>5.0</span></p>
+      </div>
+    </div>
+
+    <p class="review2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Facilis, quae veritatis impedit eius accusamus ipsam inventore!
+    </p>
+  </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="tes-card2">
+    <div class="left-content2">
+      <div class="tes-img2">
+        <img src="image/c-5.jpg">
+      </div>
+      <div class="client-info2">
+        <h2>Michael</h2>
+        <h4>Civil Engineer</h4>
+        <p class="rating2">⭐ ⭐ ⭐ ⭐ ⭐ <span>5.0</span></p>
+      </div>
+    </div>
+
+    <p class="review2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Facilis, quae veritatis impedit eius accusamus ipsam inventore!
+    </p>
+  </div>
+    <div class="tes-card2">
+    <div class="left-content2">
+      <div class="tes-img2">
+        <img src="image/c-6.jpg">
+      </div>
+      <div class="client-info2">
+        <h2>Olivia</h2>
+        <h4>Decor Specialist</h4>
+        <p class="rating2">⭐ ⭐ ⭐ ⭐ ⭐ <span>5.0</span></p>
+      </div>
+    </div>
+
+    <p class="review2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Facilis, quae veritatis impedit eius accusamus ipsam inventore!
+    </p>
+  </div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<!-------testimonial section end------>
+
+
+
+<!-------faq section start------>
+<div class="faq-text">
+  <p><i style="color: #18186e;" class="fa-solid fa-minus"></i>Faqs</p>
+  <h1>Questions You May Have</h1>
+</div>
+<div  class="faq-container">
+  <div class="accordionss fadeLeft">
+<button class="accordion">Do you offer custom furniture?</button>
+<div class="panel">
+  <p>Yes, we provide fully customized furniture based on your preferred design, size, material, and finish.</p>
+</div>
+
+<button class="accordion">What type of wood do you use?</button>
+<div class="panel">
+  <p>We use high-quality materials such as Teak, Mahogany, Oak, and Engineered Wood depending on product requirements.</p>
+</div>
+
+<button class="accordion">Do you provide home delivery?</button>
+<div class="panel">
+  <p>Yes, we offer home delivery and installation services in selected locations.</p>
+</div>
+
+<button class="accordion">What is your return or replacement policy?</button>
+<div class="panel">
+  <p>If the product is damaged or different from what you ordered, we offer replacement within 48 hours of delivery.</p>
+</div>
+
+<button class="accordion">What payment methods do you accept?</button>
+<div class="panel">
+  <p>We accept cash, mobile banking (Bkash/Nagad), and online payment options.</p>
+</div>
+</div>
+<div class="faq-image fadeRight">
+  <img src="image/faq-image.jpg">
+</div>
+</div>
+<!-------faq section end------>
+
+
+<!-------footer section start------>
+<div id="contact" class="footer-container">
+  <div class="col-1">
+    <div class="logo2">
+      <i class="fa-solid fa-couch"></i>
+      <h2>FurniLux</h2>
+      </div>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae autem recusandae tenetur, veniam aliquid reiciendis.</p>
+      <div class="icon">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-pinterest-p"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+  </div>
+  <div class="col-2">
+          <h1>Company</h1>
+          <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Career</a></li>
+          </ul>
+  </div>
+  <div class="col-3">
+    <h1>Customer Services</h1>
+          <ul>
+            <li><a href="">My Account</a></li>
+            <li><a href="">Track Order</a></li>
+            <li><a href="">Return</a></li>
+            <li><a href="">FAQ</a></li>
+          </ul>
+  </div>
+  <div class="col-4">
+    <h1>Our Information</h1>
+          <ul>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Term and Conditions</a></li>
+            <li><a href="">Return Policy</a></li>
+            <li><a href="">Payment Methods</a></li>
+          </ul>
+  </div>
+  <div class="col-5">
+    <h1>Contact Info</h1>
+          <ul>
+            <li><a href="">+0123456789</a></li>
+            <li><a href="">example@gmail.com</a></li>
+            <li><a href="">House 12,Road 5,<br>Sector 4,Uttara,Dhaka</a></li>
+          </ul>
+  </div>
+</div>
+<!-------footer section end------>
+
+
+
+<!-----copyright section------>
+<div class="copyright-container">
+    <div class="left">
+      <p>Copyright © 2025 Furniture. All Rights Reserved.</p>
+   </div>
+   <div class="right">
+      <a href=""><span class="copy-text">English</span>
+          <i class="fa-solid fa-angle-down"></i></a>
+          <span class="divider">|</span>
+          <a href=""><span class="copy-text2">USD</span>
+          <i class="fa-solid fa-angle-down"></i></a>
+   </div>
+</div>
+<!-----copyright section------>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
